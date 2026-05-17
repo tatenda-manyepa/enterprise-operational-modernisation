@@ -1,2 +1,3 @@
-# enterprise-operational-modernisation
-AWS-first cloud transformation and intelligent operations platform for modernising legacy enterprise operational systems.
+# Enterprise Operational Systems Modernisation
+
+## AWS-First Cloud Transformation & Intelligent Operations Platform
