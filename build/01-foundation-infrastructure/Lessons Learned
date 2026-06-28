@@ -1,7 +1,34 @@
-Terraform state keeps infrastructure consistent.
+# Lessons Learned
 
-Networking should be designed before applications are deployed.
+## 1. Build the network before deploying applications
+Establishing the networking foundation first provides a stable platform for every service that follows. Designing the VPC, subnets, routing and security controls before deploying workloads reduces rework and simplifies future expansion.
 
-Using default tags early makes governance much easier.
+---
 
-Separating public and private resources improves security and scalability.
+## 2. Infrastructure as Code improves consistency
+Using Terraform makes infrastructure repeatable, version controlled and easy to rebuild. The same configuration can be deployed consistently across different environments while reducing manual configuration errors.
+
+---
+
+## 3. High Availability should be designed from the beginning
+Deploying resources across multiple Availability Zones from the start avoids major architectural changes later and provides a more resilient foundation for production workloads.
+
+---
+
+## 4. Security should be built into the platform
+Separating public and private subnets, restricting traffic with security groups and keeping application resources off the public internet establishes a secure default architecture rather than relying on security improvements later.
+
+---
+
+## 5. Resource naming and tagging are important
+Applying a consistent naming convention and tagging strategy makes resources easier to identify, monitor, manage and automate as the environment grows.
+
+---
+
+## 6. Validate infrastructure before deployment
+Running `terraform validate` and `terraform plan` before `terraform apply` helped identify configuration issues early and reduced deployment risk.
+
+---
+
+## 7. Architecture documentation should evolve with the implementation
+Updating the architecture diagrams alongside the Terraform deployment ensured that the design documentation accurately reflected the deployed infrastructure and remained useful for future implementation stages.
