@@ -1,0 +1,4 @@
+aws_region   = "eu-west-2"
+environment  = "dev"
+project_name = "aos-modernisation"
+vpc_cidr     = "10.0.0.0/16"
