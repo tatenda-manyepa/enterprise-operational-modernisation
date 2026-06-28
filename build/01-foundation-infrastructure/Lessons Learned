@@ -1,0 +1,7 @@
+Terraform state keeps infrastructure consistent.
+
+Networking should be designed before applications are deployed.
+
+Using default tags early makes governance much easier.
+
+Separating public and private resources improves security and scalability.
